@@ -1911,7 +1911,7 @@ DO ~ClearAllActions()
 
 CHAIN IF WEIGHT #-1 ~Global("C0AuraBG2Quest1","GLOBAL",44)~ THEN C0AMAGN QUEST1-44
 ~I see... what a terrible affair this all has been.~ [C0BLANK]
-DO ~SetGlobal("C0AuraBG2Quest1","GLOBAL",45) AddExperienceParty(50000)~
+DO ~SetGlobal("C0AuraBG2Quest1","GLOBAL",45) AddExperienceParty(20000)~
 = ~To think that the fruits of my past research could have caused such harm... though I had no deliberate part in the details of what has occurred, it seems my actions—or perhaps inactions—have left me with much to make up for.~
 = ~Reese has gone to deliver the bad news of the poor, innocent young man's father. And I will dedicate my study in the forseeable future to producing a cure for the afflictions caused by this... 'Titan'. Perhaps some lives may yet be saved.~
 = ~As for Asclepios... he managed to escape, you said?~
@@ -2445,7 +2445,7 @@ Face(SW)~ EXIT
 
 CHAIN IF WEIGHT #-1 ~Global("C0KorshQuest","GLOBAL",7)~ THEN C0KORSH KORSH-QUEST-FINISH
 ~Thank you for all of your assistance, <CHARNAME>. My kin now have a future thanks to your efforts and the generosity of the town. Please accept this reward along with my utmost gratitude.~
-DO ~SetGlobal("C0KorshQuest","GLOBAL",8) GiveGoldForce(3000) AddExperienceParty(10000) ChangeStoreMarkup("C0ASHOP2",100,40)~
+DO ~SetGlobal("C0KorshQuest","GLOBAL",8) GiveGoldForce(3000) AddExperienceParty(5000) ChangeStoreMarkup("C0ASHOP2",100,40)~
 == C0KORSH IF ~Global("C0KorshQuestGaveScales","GLOBAL",1)~ THEN ~And, for the extra effort in finding the Scales of Waukeen and offering it for my need, please take my personal armor as an exchange. I believe I will no longer need it.~
 DO ~GiveItem("C0ACHAN1",Player1)~
 == C0KORSH ~Of course, I would be more than pleased to have you spend that gold back in my shop. And as extra incentive, you'll receive an exclusive discount for my wares from hereon, as you rightly deserve.~
@@ -4464,7 +4464,7 @@ DO ~GiveItemCreate("C0AAMU1",Player1,1,0,0) GiveItemCreate("C0AMISC8","C0Aura",1
 == C0AURA2J IF ~InParty("C0Aura")~ THEN  ~Thank you, Juno... take care of yourselves here, and on the way back. You too, Luna. I love you both.~
 == C0AURA2P IF ~!InParty("C0Aura")~ THEN  ~Thank you, Juno... take care of yourselves here, and on the way back. You too, Luna. I love you both.~
 == C0ALUNA ~Don't worry about us. We're the ones who should be worried.~
-DO ~AddJournalEntry(%Quest3_Entry_4%,QUEST_DONE) AddExperienceParty(60000)~
+DO ~AddJournalEntry(%Quest3_Entry_4%,QUEST_DONE) AddExperienceParty(25000)~
 == C0AJUNO ~Good luck, <CHARNAME>. Keep my little sister safe. She's a treasure to Lantan, to her people... and to us, more than anything. May Gond's blessing be with you.~
 END
 IF ~!InParty("C0Aura")~ DO ~ActionOverride("C0Aura",JoinParty())~ EXIT

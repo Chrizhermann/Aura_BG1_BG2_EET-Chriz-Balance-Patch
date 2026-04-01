@@ -8,7 +8,7 @@ THEN
         SetGlobal("C0AuraBG2Quest2IceEncounter","GLOBAL",5)
         CreateVisualEffectObject("C0FREEZE",Myself)
         Polymorph(C0_SNOW_HAG)
-        AddExperienceParty(50000)
+        AddExperienceParty(20000)
         Kill(Myself)
         Continue()
     END

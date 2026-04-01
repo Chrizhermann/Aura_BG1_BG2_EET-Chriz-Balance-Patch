@@ -245,7 +245,7 @@ END
 CHAIN C02AURA voidstone.2
 ~Nothing insidious. I just thought I might be able to turn them into some sort of explosive weapon. I only need the dust, though. I can do plenty with this.~
 = ~I can't make too many at once. It's just too draining on my resources... not to mention, it's dangerous. I'll only be able to make one per alchemy session. It'll be powerful, though, that much I can guarantee.~
-DO ~SetGlobal("C02AuraVoidstone","GLOBAL",2) AddXPObject("C0Aura",500)~ EXIT
+DO ~SetGlobal("C02AuraVoidstone","GLOBAL",2) AddXPObject("C0Aura",0)~ EXIT
 
 // Kicked Out
 

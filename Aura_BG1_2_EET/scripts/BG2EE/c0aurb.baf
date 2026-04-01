@@ -81,7 +81,7 @@ THEN
     Wait(1)
     CreateVisualEffectObject("SPFLASNC","C0AFIR05")
     CreateVisualEffectObject("ICFIRSDI","C0AFIR05")
-    AddExperienceParty(30000)
+    AddExperienceParty(15000)
     Kill("C0AFIR10")
     Kill("C0AFIR05")
     SetInterrupt(TRUE)

@@ -1106,7 +1106,7 @@ CHAIN C0AURAJ tamoko5
 == TAMOKO ~...~
 == C0AURAJ ~Your aunt... she always believed that you had the choice to return. Please, put down your weapon... this is not the right way.~
 == TAMOKO ~It makes no difference. My actions under Sarevok have taken me from the Way long ago. The kami have forsaken me. To associate myself with the name of Amanokagami would a stain upon its honor.~
-DO ~AddJournalEntry(@20002,QUEST_DONE) AddExperienceParty(5000)~
+DO ~AddJournalEntry(@20002,QUEST_DONE) AddExperienceParty(1500)~
 == C0AURAJ ~No...~
 == TAMOKO ~I have given you the chance to speak. Now it is time for your leader to put this to an end, for it is Sarevok's will that I die, and I have no choice but to obey.~
 COPY_TRANS TAMOKO 20
@@ -1258,7 +1258,7 @@ CHAIN IF ~Global("C0AuraWeirdPotions","GLOBAL",4)~ THEN C0AURAJ weirdpotions
 DO ~SetGlobal("C0AuraWeirdPotions","GLOBAL",5)~
 = ~I've memorized the formula, so I'll be able to make more along with my usual fare. They're... not as volatile as the originals. But that's also a good thing. I thought playing it safe would be a good idea. Maybe in the future, I'll look more into them.~
 = ~I'll give you the ones I've made. If you need more, I'll have to purchase more components, though, and they're pretty pricey. Okay, that's everything. Carry on!~
-DO ~GiveItemCreate("c0apotx1",Player1,1,0,0) SetItemFlags("c0apotx1",IDENTIFIED,TRUE) GiveItemCreate("c0apotx2",Player1,1,0,0) SetItemFlags("c0apotx2",IDENTIFIED,TRUE) AddXPObject("C0Aura",500)~ EXIT
+DO ~GiveItemCreate("c0apotx1",Player1,1,0,0) SetItemFlags("c0apotx1",IDENTIFIED,TRUE) GiveItemCreate("c0apotx2",Player1,1,0,0) SetItemFlags("c0apotx2",IDENTIFIED,TRUE) AddXPObject("C0Aura",0)~ EXIT
 
 // TELESCOPE
 
@@ -1286,7 +1286,7 @@ CHAIN IF ~Global("C0AuraTelescope","GLOBAL",2)~ THEN C0AURAJ telescope.3
 ~Okay! That was easy. I've tinkered with plenty of these while I was training at the academy. Bet you can't even tell it's different.~ [C0BLANK]
 DO ~SetGlobal("C0AuraTelescope","GLOBAL",3)~
 = ~I put the real telescope somewhere. Hopefully they won't wonder too much about how it got moved. Now let's get out of here.~
-DO ~AddXPObject("C0Aura",1000)~ EXIT
+DO ~AddXPObject("C0Aura",0)~ EXIT
 
 CHAIN C0AURAJ telescope.x
 ~Fine. Have it your way. I guess I've just completely misjudged you.~
@@ -1337,7 +1337,7 @@ CHAIN IF ~Global("C0AuraQuest","GLOBAL",10)~ THEN C0AURAJ endquest
 = ~(She kneels before the ronin's corpse and clasps her hands, uttering a few Kozakuran prayers. Eventually, she lays her hand over his eyelids, closing them, and rises.)~
 DO ~FadeFromColor([30.0],0)~
 = ~I... guess you probably have a lot of questions to ask. I'd rather not talk here, though. Lead on, <CHARNAME>... I'll take the sword with me.~
-DO ~SetGlobal("C0AuraQuest","GLOBAL",11) AddExperienceParty(10000) GiveItemCreate("c0auswfa",Myself,1,0,0) AddJournalEntry(@10008,QUEST_DONE)~ EXIT
+DO ~SetGlobal("C0AuraQuest","GLOBAL",11) AddExperienceParty(3000) GiveItemCreate("c0auswfa",Myself,1,0,0) AddJournalEntry(@10008,QUEST_DONE)~ EXIT
 
 APPEND C0AURAJ
 
@@ -2018,7 +2018,7 @@ IF ~Global("C0AuraCrystal","GLOBAL",1)~ THEN BEGIN crystal2
 SAY ~I ran some experiments on the ice crystal you found, and the results match up with what I've studied about extraplanar powers.~
 = ~The crystal that you found was an essence of ice, from the Para-Elemental Plane of Ice. I'm not sure how it ended up in this plane, but it likely has something to do with the magic that affects that ice island.~
 = ~It's not very useful on its own, though. I wish I had the resources to make something more interesting out of it, but this is what I could put together with what I had. Here, take it.~
-IF ~~ DO ~SetGlobal("C0AuraCrystal","GLOBAL",2) AddXPObject("C0Aura",1500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraCrystal","GLOBAL",2) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ runes
@@ -2608,7 +2608,7 @@ IF WEIGHT #-1 ~Global("C0AuraAtWork","GLOBAL",4)
 Global("C0AuraKozah","GLOBAL",1)~ craftdone4.1
 SAY ~Uh, that wasn't supposed to happen... I think.~
 = ~Actually, on second thought... maybe the thunderbolt helped activate the idol's powers. It's practically buzzing with energy now!~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim04",Player1,3,1,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim04",Player1,3,1,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF WEIGHT #-1 ~!Global("C0AuraAtWork","GLOBAL",0)
@@ -2628,17 +2628,17 @@ END
 
 IF ~~ craftdone1
 SAY ~The sword... well, I've calmed it down a little, at least. You should be able to put it back down even if you hold it now, but... still, be careful. It's still a little on the dangerous side.~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim01",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim01",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone2
 SAY ~Here you go... ooh, careful with the thorns, though! I've lost count of the number of times I've pricked myself by accident. My fingers are still numb in places. Be careful how you handle the spear. It's not cursed anymore, but it might still be dangerous, if you're not particularly dexterous.~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim02",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim02",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone3
 SAY ~It took a bit of adjusting, but you won't have to worry about mixing these bracers up with other pairs anymore. Plus, they're more comfortable to wear now!~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim03",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim03",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone4
@@ -2649,32 +2649,32 @@ END
 
 IF ~~ craftdone5
 SAY ~These should be handy for more delicate work. You won't need to be afraid of fumbling things are long as you're wearing them. Assuming I got the enchantments right, anyway...~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim05",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim05",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone6
 SAY ~I'd call this a passing grade? Come on, I can pat myself on the back once in a while, can't I?~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim06",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim06",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone7
 SAY ~I'm rather attached to this ring, actually. Maybe I could hold on to it if you don't have any other ideas? Hehe.~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim07",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim07",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone8
 SAY ~Okay, the curse is gone, but aside from that, it's not much different. What you do with it, that's up to you. I don't wanna know.~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim08",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim08",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone9
 SAY ~The curse was much easier to clear off than the mess, really. Whoever cursed it to begin with didn't really put in a whole lot of effort.~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("belt06",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("belt06",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ craftdone10
 SAY ~*sigh* It took a little more than artifice to give the soul of this weapon some measure of peace. But... I learned some rites from my mentor that I felt were appropriate. It was the most I could do. Yasuraka ni nemuru...~
-IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim09",Player1,0,0,0) AddXPObject("C0Aura",500)~ EXIT
+IF ~~ DO ~SetGlobal("C0AuraAtWork","GLOBAL",0) GiveItemCreate("c0auim09",Player1,0,0,0) AddXPObject("C0Aura",0)~ EXIT
 END
 
 IF ~~ stringfix
