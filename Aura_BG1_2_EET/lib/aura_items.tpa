@@ -1651,13 +1651,10 @@ SAY DESC ~This heavy bludgeon is known as a kanabo, a spiked club wielded by war
 STATISTICS:
 
 Combat abilities:
-– Each hit has a 20% chance to inflict the target with Burning Thorns, dealing 1d6 immediate piercing damage and an additional point of fire damage every round for three rounds.
-
-Equipped abilities:
-– When the wielder falls below 50% maximum hit points, <PRO_HESHE> gains a +2 bonus to damage but a -2 penalty to Armor Class.
+– 10% chance to inflict 1 fire damage per round for 2 rounds
 
 THAC0: +2
-Damage: 1d6+2, +1d4 fire damage
+Damage: 1d6+2
 Damage type: crushing
 Speed Factor: 4
 Proficiency Type: Club
@@ -1695,25 +1692,13 @@ SAY DESC ~This masterwork katana, claimed to be blessed by a Kara-Turan deity, w
 
 STATISTICS:
 
-Combat abilities:
-– Returns to the wielder's hand when thrown
-– Disarm: 10% chance (40% chance in melee) to disarm opponent, reducing their attacks per round to 0 for 1 round (save vs. death to avoid)
-– Critical hits deal an additional 1d10+4 slashing damage
-
-Equipped abilities:
-– 1/2 extra attack per round
-
 THAC0: +2
-Damage (melee): 1d10+4
-Damage (ranged): 1d4+2
-Damage type: slashing
-Speed Factor: 2
+Damage: 1d10+2 (slashing)
+Speed Factor: 4
 Proficiency Type: Katana
 Type: One-handed
 Requires:
  6 Strength
- 16 Dexterity
- 14 Intelligence
 
 Weight: 4~
 SAY 0x1D6 ~Disarmed~
@@ -1740,16 +1725,9 @@ According to Aura, the sword's name roughly translates to 'Swift Wing'.
 
 STATISTICS:
 
-Combat abilities:
-– Critical Hit Chance: +5%
-
-Equipped abilities:
-– Dexterity: +1
-– Movement Rate: +2
-
 THAC0: +1
-Damage: 1d8+3 (piercing)
-Speed Factor: 2
+Damage: 1d8+1 (piercing)
+Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninja-to
 Type: One-handed
 Requires:
@@ -1785,12 +1763,11 @@ The name 'Musou' is engraved in tiny, barely noticeable letters in the Kozakuran
 STATISTICS:
 
 Combat abilities:
-– Critical Hit Chance: +10%
-– Upon inflicting a critical hit with this weapon, the target bleeds for two points of piercing damage per round for six rounds (no save).
+– Critical Hit Chance: +5%
 
-THAC0: +4
+THAC0: +2
 Damage: 1d8+2 (slashing)
-Speed Factor: 1
+Speed Factor: 3
 Proficiency Type: Scimitar/Wakizashi/Ninjato
 Type: One-handed
 Requires:
@@ -1811,7 +1788,7 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: -2 penalty
 
-THAC0: +3
+THAC0: +2
 Damage: 1d10+3 (slashing)
 Speed Factor: 7
 Proficiency Type: Two-handed Sword
@@ -1824,22 +1801,22 @@ Weight: 15~
 COPY_EXISTING ~c0auim02.itm~ ~override~
 LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (~Bleeding~) END
 SAY NAME1 ~Spear~
-SAY NAME2 ~Biting Thorns +3~
+SAY NAME2 ~Biting Thorns +2~
 SAY DESC ~Once a cursed spear which struck the wielder as they struck the enemy, this weapon is now a powerful asset after Aura's enhancements. The barbed thorns that once threatened its wielder now are now its greatest asset, lodging themseves into their foe and causing deep bleeding. However, the weapon has not been fully tamed, as it requires great finesse to wield without self-injury.
 
 STATISTICS:
 
 Combat abilities:
-– Target bleeds for 1 piercing damage per 2 seconds for 1 round on a failed Save vs. Breath
+– Barbed thorns cause minor bleeding on failed Save vs. Breath, dealing 1 piercing damage per round for 2 rounds
 
-THAC0: +3
-Damage: 1d6+3 (piercing)
+THAC0: +2
+Damage: 1d6+2 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed
 Requires:
  5 Strength
- 17 Dexterity
+ 12 Dexterity
 
 Weight: 5~
 
@@ -1943,7 +1920,7 @@ Weight: 2~
 
 COPY_EXISTING ~c0auim09.itm~ ~override~
 SAY NAME1 ~Morningstar~
-SAY NAME2 ~Kiel's Morning Star +3~
+SAY NAME2 ~Kiel's Morning Star +2~
 SAY DESC ~This is the morning star of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. He was wielding it in his final hour as he rushed to warn his father of the doppelgangers' infiltration of their Clan-home. It is said that the intensity of his rage in these final moments permanently imprinted itself upon the weapon. All who wield it are overcome with this battle anger whenever an enemy is sighted.
 
 Aura claims that no magicks of artifice could suffice to quell the rage within this weapon—only the rites taught to her by her Kozakuran mentor managed to grant the vengeful spirit any measure of peace. Now, the weapon embodies its former master's undying will.
@@ -1951,10 +1928,10 @@ Aura claims that no magicks of artifice could suffice to quell the rage within t
 STATISTICS:
 
 Combat abilities:
-– Saving Throws: +2
+– Saving Throws: +1
 
-THAC0: +3
-Damage: 2d4+3 (crushing)
+THAC0: +2
+Damage: 2d4+2 (crushing)
 Speed Factor: 4
 Proficiency Type: Flail/Morning Star
 Type: One-handed
