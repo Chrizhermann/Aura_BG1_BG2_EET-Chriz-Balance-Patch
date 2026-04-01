@@ -568,7 +568,7 @@ EXTERN C0AURAJ t8.4
 CHAIN C0AURAJ t8.4
 ~It's just that... I never expected things to become this bad. To be honest, up until now I don't think I've been taking this adventure seriously enough, and for that... I'm sorry.~
 = ~I don't want to be a burden to you, <CHARNAME>. If there's anything I can do... here, take this. It's an invisibility device I made to keep me safe on the road. If we're going to need to hide from the law, it might come in handy.~
-DO ~GiveItemCreate("c0autt04",Player1,5,0,0)~
+DO ~GiveItemCreate("c0autt04",Player1,1,0,0)~
 = ~I'm not sure how many more uses it's good for, but... it should be enough. I'd rather not kill anyone who doesn't deserve it, so... I hope it'll help avoid a few fights.~
 END
 ++ ~Don't think of yourself as a burden. I don't think I could find anyone else to do the things you can.~ + t8.5
