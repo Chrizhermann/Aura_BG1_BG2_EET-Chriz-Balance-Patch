@@ -1483,14 +1483,14 @@ SAY DESC ~This shimmering glass orb, roughly the size of a clenched fist, crackl
 STATISTICS:
 
 Charge abilities (one use):
-– When a Burst Orb is launched at the targeted area, it erupts into a mass of energy, dealing electrical damage and sending all targets away from the center of impact as well as knocking them unconscious for one round.
-  Damage: 4d6+2 electrical
+– When a Burst Orb is launched at the targeted area, it erupts into a mass of energy, dealing electrical damage to all targets within the area of effect.
+  Damage: 2d6 electrical
   Range: 30 ft.
   Area of Effect: 10' radius
-  
+
 Requires:
   9 Intelligence
-  
+
 Weight: 1~
 WRITE_SHORT 0x9C ~%c0aburst%~
 
@@ -1547,14 +1547,14 @@ Unlike most magical wands, it is activated through pressing a button at the base
 STATISTICS:
 
 Charge abilities (once per day):
-– Launches a ray of extreme cold towards the target, dealing cold damage and freezing the target for one turn on a failed Save vs. Wands at -2. While frozen, the target suffers double damage from physical and fire damage but is immune to cold damage. After five rounds have passed or upon taking damage, the target will be Shattered, becoming unfrozen and suffering a -2 penalty to Armor Class and Strength for one turn.
-  Damage: 6d6 cold (Save vs. Wand at -2 for half)
+– Launches a ray of extreme cold towards the target, dealing cold damage and freezing the target for three rounds on a failed Save vs. Wands.
+  Damage: 3d6 cold (Save vs. Wands for half)
   Range: 30 ft.
   Area of Effect: 1 creature
-  
+
 Requires:
   9 Intelligence
-  
+
 Weight: 1~
 
 COPY_EXISTING ~c0autt03.itm~ ~override~
@@ -1576,27 +1576,24 @@ SAY DESC ~This experimental device is designed by Aura to amplify the abilities 
 STATISTICS:
 
 Charge abilities (once per day):
-– Rapid Surge: For the next round, the wearer may cast without delay and has casting time reduced by 4. However, every spell cast during this time will incur a wild surge.
+– Rapid Surge: For the next round, the wearer may cast without delay. However, every spell cast during this time will incur a wild surge.
 
 Equipped abilities:
 – +10% probability that a wild surge will have positive effect
-– +2 bonus 1st level spells
 
 Weight: 0~
 
 COPY_EXISTING ~c0autt04.itm~ ~override~
 SAY NAME1 ~Aura's Invisibility Device~
 SAY NAME2 ~Aura's Invisibility Device~
-SAY DESC ~This unusual looking metal device appears to function like a wand, except that it is activated through the push of a button rather than a command word, allowing anyone to use it with ease. When activated, it releases a shimmering sphere of light which envelops the user and <PRO_HISHER> allies, turning them invisible. It has apparently seen frequent use, as Aura claimed to have used it to evade bandits during her travels.
+SAY DESC ~This unusual looking metal device appears to function like a wand, except that it is activated through the push of a button rather than a command word, allowing anyone to use it with ease. When activated, it releases a shimmering sphere of light which envelops the user, turning them invisible. It has apparently seen frequent use, as Aura claimed to have used it to evade bandits during her travels.
 
 STATISTICS:
 
 Charge abilities:
-– Causes all allied creatures within the radius to turn invisible
-  Range: Self
-  Radius: 30'
-  Duration: 10 turns
- 
+– It turns the user invisible
+  Duration: 5 rounds
+
 Weight: 1~
 
 COPY_EXISTING ~c0bandol.itm~ ~override~
@@ -1985,12 +1982,7 @@ SAY DESC ~This malignant explosive was crafted using dust from the voidstone whi
 
 STATISTICS
 
-When thrown, unleashes a burst of negative energy which deals Magic Damage and reduces all creatures' Strength. Has no effect against undead.
-  1st level: 6d6+4 Magic Damage (Save vs. Spells for half), -1 Strength (5 rounds)
-  10th level: 6d8+6 Magic Damage (Save vs. Spells at -1 for half), -2 Strength (7 rounds)
-  20th level: 6d10+8 Magic Damage (Save vs. Spells at -2 for half), -3 Strength (1 turn)
-  30th level: 8d10+10 Magic Damage (Save vs. Spells at -3 for half), -4 Strength (2 turns)
-  40th level: 10d10+12 Magic Damage (Save vs. Spells at -4 for half), -5 Strength (3 turns)
+When thrown, unleashes a burst of negative energy which deals 3d6 Magic Damage (Save vs. Spell for half) and reduces the target's Strength by 1 for 3 rounds. Has no effect against undead.
 
 Weight: 0~
 	WRITE_SHORT 0x001c	~%grenade%~

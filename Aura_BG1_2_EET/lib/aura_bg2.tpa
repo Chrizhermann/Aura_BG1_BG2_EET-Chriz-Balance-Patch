@@ -3145,49 +3145,48 @@ Weight: 25~
 COPY_EXISTING ~c0apotn1.itm~ ~override~
 SAY NAME1 ~Potion~
 SAY NAME2 ~Potion of Adroitness~
-SAY DESC ~This potion appears to have been a new experiment, designed to permanently increase the imbiber's agility and hand-eye co-ordination. Unfortunately, it appears that its brewing process was partially uncompleted, giving it a side-effect of weakening stamina. Considering its unknown recipe and the unmatched skills of its creator, it is unlikely anyone else will be able to fully perfect the potion.
+SAY DESC ~This potion appears to have been a new experiment, designed to temporarily increase the imbiber's agility and hand-eye co-ordination. Considering its unknown recipe and the unmatched skills of its creator, it is unlikely anyone else will be able to fully perfect the potion.
 
 STATISTICS:
 
 Dexterity: +1
-Constitution: -1
-Duration: Permanent
+Duration: 8 hours
 
 Weight: 1~
 
 COPY_EXISTING ~c0apotn2.itm~ ~override~
 SAY NAME1 ~Potion~
 SAY NAME2 ~Potion of Quickness of Action~
-SAY DESC ~This potion was made using the blood of a kuo-toan prince as its primary component, and has the ability to permanently bolster its imbiber's dexterity.
+SAY DESC ~This potion was made using the blood of a kuo-toan prince as its primary component, and has the ability to temporarily bolster its imbiber's dexterity.
 
 STATISTICS:
 
 Dexterity: +1
-Duration: Permanent
+Duration: 8 hours
 
 Weight: 1~
 
 COPY_EXISTING ~c0apotn3.itm~ ~override~
 SAY NAME1 ~Potion~
 SAY NAME2 ~Potion of Understanding~
-SAY DESC ~This potion was made using the blood of an elder orb as its primary component, and has the ability to permanently bolster its imbiber's wisdom.
+SAY DESC ~This potion was made using the blood of an elder orb as its primary component, and has the ability to temporarily bolster its imbiber's wisdom.
 
 STATISTICS:
 
 Wisdom: +1
-Duration: Permanent
+Duration: 8 hours
 
 Weight: 1~
 
 COPY_EXISTING ~c0apotn4.itm~ ~override~
 SAY NAME1 ~Potion~
 SAY NAME2 ~Potion of Clear Thought~
-SAY DESC ~This potion was made using the blood of an illithid elder brain as its primary component, and has the ability to permanently bolster its imbiber's intellect.
+SAY DESC ~This potion was made using the blood of an illithid elder brain as its primary component, and has the ability to temporarily bolster its imbiber's intellect.
 
 STATISTICS:
 
 Intelligence: +1
-Duration: Permanent
+Duration: 8 hours
 
 Weight: 1~
 
@@ -3423,11 +3422,11 @@ COPY_EXISTING ~c0abombb.itm~ ~override~
 END
 SAY NAME1 ~Firebomb~
 SAY NAME2 ~CL-2 Anti-Mechanism Bomb~
-SAY DESC ~This contraption is a thrown weapon which, when thrown, releases a shocking wave of electricity that disrupts the mechanical 'mind' of golems and other constructed beings, causing them to become inactive for a short period of time. On rare occasions, it rewires the construct's mind and places it under the control of the weapon's creator.
+SAY DESC ~This contraption is a thrown weapon which, when thrown, releases a shocking wave of electricity that disrupts the mechanical 'mind' of golems and other constructed beings.
 
 STATISTICS:
 
-When thrown, unleashes a burst of energy which deals 2d6 electrical damage. Deals an additional 4d6 damage to constructs and disables them for 1d4 rounds on a failed save vs. breath weapons at -6. There is a small chance that affected constructs will be put under the user's control for one turn instead.
+When thrown, unleashes a burst of energy which deals 2d6 electrical damage (Save vs. Breath for half). Deals an additional 2d6 damage to constructs.
 
 Weight: 0~
 	WRITE_SHORT 0x001c	~%grenade%~
@@ -3461,11 +3460,11 @@ COPY_EXISTING ~c0abombc.itm~ ~override~
 END
 SAY NAME1 ~Firebomb~
 SAY NAME2 ~PR-3 Phaser Bomb~
-SAY DESC ~This contraption is a thrown weapon which, when thrown, releases a wave of mysterious energy which is anathema to creatures not native to the Prime Material Plane, dealing tremendous damage and causing their senses to become briefly paralyzed.
+SAY DESC ~This contraption is a thrown weapon which, when thrown, releases a wave of mysterious energy which is anathema to creatures not native to the Prime Material Plane.
 
 STATISTICS:
 
-When thrown, unleashes a burst of energy which deals 2d6 magical damage. Deals an additional 4d6 damage to extraplanar creatures (e.g. demons, devils, elementals) and stuns them for 1d4 rounds on a failed save vs. breath weapons at -4.
+When thrown, unleashes a burst of energy which deals 2d6 magic damage (Save vs. Breath for half). Deals an additional 2d6 damage to extraplanar creatures (e.g. demons, devils, elementals).
 
 Weight: 0~
 	WRITE_SHORT 0x001c	~%grenade%~
@@ -3496,7 +3495,7 @@ SAY DESC ~This bottle of flammable oil was originally designed by the Lantanese 
 
 STATISTICS:
 
-When thrown, unleashes a blast of flame which deals 8d6 fire damage (save vs. breath at -2 for half). If the target is a troll, it permanently loses its regenerative abilities.
+When thrown, unleashes a blast of flame which deals 3d6 fire damage (Save vs. Breath for half). If the target is a troll, it permanently loses its regenerative abilities.
 
 Weight: 0~
 	WRITE_SHORT 0x001c	~%grenade%~
@@ -3507,7 +3506,7 @@ SAY NAME1 ~Advanced Alchemy: Create Arcane Disjunctor~
 SAY UNIDENTIFIED_DESC ~Advanced Alchemy: Create Arcane Disjunctor
 With assistance from Aura combined with her own magical knowledge, Imoen has the ability to create three Arcane Disjunctor grenades once per day.
 
-When thrown, the Arcane Disjunctor unleashes a burst of arcane energy which deals 8d6 Magic Damage (Save vs. Spells for half) and, on a failed Saving Throw vs. Spells, causes all spells cast by afflicted targets within the next five rounds to be miscast. If targets pass their Saving Throw, the miscast chance is reduced to 50% and duration is reduced to two rounds. Regardless of whether targets make their Saving Throw, their casting speed is also penalized by 2 for five rounds.~
+When thrown, the Arcane Disjunctor unleashes a burst of arcane energy which deals 1d6 Magic Damage and, on a failed Saving Throw vs. Spells, afflicts targets with 50% miscast magic for 2 rounds. No effect on a successful save.~
 
 COPY_EXISTING ~c0auimb.itm~ ~override~
 SAY NAME1 ~Grenade~
@@ -3516,7 +3515,7 @@ SAY DESC ~The Arcane Disjunctor was created via collaboration by Imoen and Aura 
 
 STATISTICS:
 
-When thrown, unleashes a burst of arcane energy which deals 2d6 Magic Damage (Save vs. Spells for half) and, on a failed Saving Throw vs. Spells, causes all spells cast by afflicted targets within the next five rounds to be miscast. If targets pass their Saving Throw, the miscast chance is reduced to 50% and duration is reduced to two rounds. Regardless of whether targets make their Saving Throw, their casting speed is also penalized by 2 for five rounds.
+When thrown, unleashes a burst of arcane energy which deals 1d6 Magic Damage and, on a failed Saving Throw vs. Spells, afflicts targets with 50% miscast magic for 2 rounds. No effect on a successful save.
 
 Weight: 1~
 	WRITE_SHORT 0x001c	~%grenade%~
