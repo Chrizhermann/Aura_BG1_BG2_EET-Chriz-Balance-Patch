@@ -167,14 +167,11 @@ SAY DESC ~Eyewear of this sort are mass-produced in Lantanese workshops, with sp
 
 STATISTICS:
 
-Charge abilities (three times per day):
+Charge abilities (once per day):
 – Identify
-– Reveal Magic: Reveal all dispellable enchantments within 50' and gain +2 to attack rolls vs. arcane casters (bards, mages, sorcerers) for one turn
 
 Equipped abilities:
-– Find Traps: +20%
-– Detect Illusions: +20%
-– Protection from gaze attacks
+– Find Traps: +10%
 – Immunity to blindness~
 
 COPY_EXISTING ~c0muffy.itm~ ~override~
@@ -186,7 +183,7 @@ Regardless of how it is able to act as though it were alive, Muffy is doubtlessl
 
 STATISTICS:
 
-Capacity: 40 items
+Capacity: 20 items
 Weight: 0~
 OUTER_SET strref = RESOLVE_STR_REF (~Muffy scurries away in fear of you, its contents clattering as it runs. "Hey, get back here!" Aura sighs. "Hope he hasn't broken anything this time..."~ [C0MUFFY])
 APPEND item_use.2da ~c0muffy Aura %strref% 3~
@@ -201,7 +198,7 @@ SAY DESC ~This large metal-bound book is designed to hold runes and scrolls of a
 
 STATISTICS:
 
-Capacity: 100
+Capacity: 20
 Weight: 0~
 
 COPY_EXISTING ~c0aubook.sto~ ~override~
@@ -1613,7 +1610,7 @@ SAY DESC ~This bag was designed by Aura to safely carry fragile objects such as 
 
 STATISTICS:
 
-Capacity: 100
+Capacity: 20
 
 Weight: 0~
 
