@@ -47,8 +47,8 @@ LAF ADD_KIT_EX
     help          = RESOLVE_STR_REF(~ARTIFICER: Lantanese artificers are master innovators and craftsmen, making up for their lack of combat or cloak-and-dagger skills with expert knowledge in use of arcane runes, deadly alchemical traps and metal automatons.
 
 Advantages:
-– +20 bonus to Lore.
-– +5 additional Lore per level gained.
+– +10 bonus to Lore.
+– +2 additional Lore per level gained.
 – +10% bonus to Find Traps, Open Locks and Set Traps.
 – May use the Set Alchemical Snare ability once per day in addition to the normal Thief's Set Snare. Gains one use at level 1 and an additional use every 5 levels thereafter.
 
@@ -67,34 +67,31 @@ CRAFT RUNE: Artificers that have knowledge of magic are capable of creating and 
 
 ADVANCED ALCHEMY: Lantanese artificers are skilled in chemistry and potion-making. This skill may be used to craft a number of potions or alchemical weapons. The types of potions available for crafting increase with the artificer's level.
 
-– May use Analyze at will.
+– May use Analyze once per day. Gains one additional use at 8th and 16th level.
 
-ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used an unlimited number of times.
+ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used a limited number of times per day.
 
 – 3rd level: May use the Infusion ability once per day.
 
-INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 10% bonus to damage with the selected damage type +1% additional damage per two levels, capping at 30% at 40th level, with an additional effect:
+INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 5% bonus to damage with the selected damage type, with an additional effect:
   SLASHING: Increases critical hit rate with slashing weapons by 1.
   CRUSHING: Attacks with crushing weapons reduce target's THAC0 by 2 points for 2 rounds (non-cumulative).
   PIERCING: Attacks with piercing weapons reduce target's piercing resistance by 25% for 2 rounds (non-cumulative).
   MISSILES: Additional +1 bonus to hit and damage with ranged weapons.
 
-– 8th level: Infusion's enchantment bonus increases to +2.
 – 9th level: May use the Craft Automaton ability once per day.
 
 CRAFT AUTOMATON: The artificer spends two rounds to assimilate a powerful automaton which can be controlled at will. Automatons last until destroyed, are disabled if their creator is incapacitated, lose control if their creator's mind is affected and fall apart if their creator is killed. Only one automaton can be controlled at any given time.
 
+– 10th level: Infusion's enchantment bonus increases to +2.
 – 10th level: Gains an additional use of Craft Rune.
 – 12th level: May use Elemental Infusions.
 
-ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 10% bonus to damage with and resistance to that element from all sources with an additional +1% additional per level, capping at 50% at 40th level.
+ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 5% bonus to damage with and 10% resistance to that element from all sources.
 
-– 16th level: Infusion's enchantment bonus increases to +3.
-– 18th level: Soul of Artifice: +1 bonus to Saving Throws. This bonus increases to +3 while under the effects of Infusion.
+– 18th level: Infusion's enchantment bonus increases to +3.
+– 18th level: Soul of Artifice: +1 bonus to Saving Throws.
 – 20th level: Gains an additional use of Craft Rune.
-– 24th level: Infusion's enchantment bonus increases to +4.
-– 32nd level: Infusion's enchantment bonus increases to +5.
-– 40th level: Infusion's enchantment bonus increases to +6.
 
 Disadvantages:
 – Hit Die: d4
@@ -102,7 +99,7 @@ Disadvantages:
 – -10% penalty to Pick Pockets, Hide in Shadows and Move Silently.
 – No backstab multiplier.
 – May only distribute 20 skill points per level among thieving skills.~)
-	
+
     briefdesc     = RESOLVE_STR_REF(~ARTIFICER: Lantanese artificers are master innovators and craftsmen, making up for their lack of combat or cloak-and-dagger skills with expert knowledge in use of arcane runes, deadly alchemical traps and metal automatons.~)
 	
 	// fallen = 0
@@ -235,8 +232,8 @@ Gnomes can choose this multi-class, but become Illusionist/Artificers by default
 ARTIFICER: Lantanese artificers are master innovators and craftsmen, making up for their lack of combat or cloak-and-dagger skills with expert knowledge in use of arcane runes, deadly alchemical traps and metal automatons.
 
 Advantages:
-– +20 bonus to Lore.
-– +5 additional Lore per level gained.
+– +10 bonus to Lore.
+– +2 additional Lore per level gained.
 – +10% bonus to Find Traps, Open Locks and Set Traps.
 – May use the Set Alchemical Snare ability once per day in addition to the normal Thief's Set Snare. Gains one use at level 1 and an additional use every 5 levels thereafter.
 
@@ -255,34 +252,31 @@ CRAFT RUNE: Artificers that have knowledge of magic are capable of creating and 
 
 ADVANCED ALCHEMY: Lantanese artificers are skilled in chemistry and potion-making. This skill may be used to craft a number of potions or alchemical weapons. The types of potions available for crafting increase with the artificer's level.
 
-– May use Analyze at will.
+– May use Analyze once per day. Gains one additional use at 8th and 16th level.
 
-ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used an unlimited number of times.
+ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used a limited number of times per day.
 
 – 3rd level: May use the Infusion ability once per day.
 
-INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 10% bonus to damage with the selected damage type +1% additional damage per two levels, capping at 30% at 40th level, with an additional effect:
+INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 5% bonus to damage with the selected damage type, with an additional effect:
   SLASHING: Increases critical hit rate with slashing weapons by 1.
   CRUSHING: Attacks with crushing weapons reduce target's THAC0 by 2 points for 2 rounds (non-cumulative).
   PIERCING: Attacks with piercing weapons reduce target's piercing resistance by 25% for 2 rounds (non-cumulative).
   MISSILES: Additional +1 bonus to hit and damage with ranged weapons.
 
-– 8th level: Infusion's enchantment bonus increases to +2.
 – 9th level: May use the Craft Automaton ability once per day.
 
 CRAFT AUTOMATON: The artificer spends two rounds to assimilate a powerful automaton which can be controlled at will. Automatons last until destroyed, are disabled if their creator is incapacitated, lose control if their creator's mind is affected and fall apart if their creator is killed. Only one automaton can be controlled at any given time.
 
+– 10th level: Infusion's enchantment bonus increases to +2.
 – 10th level: Gains an additional use of Craft Rune.
 – 12th level: May use Elemental Infusions.
 
-ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 10% bonus to damage with and resistance to that element from all sources with an additional +1% additional per level, capping at 50% at 40th level.
+ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 5% bonus to damage with and 10% resistance to that element from all sources.
 
-– 16th level: Infusion's enchantment bonus increases to +3.
-– 18th level: Soul of Artifice: +1 bonus to Saving Throws. This bonus increases to +3 while under the effects of Infusion.
+– 18th level: Infusion's enchantment bonus increases to +3.
+– 18th level: Soul of Artifice: +1 bonus to Saving Throws.
 – 20th level: Gains an additional use of Craft Rune.
-– 24th level: Infusion's enchantment bonus increases to +4.
-– 32nd level: Infusion's enchantment bonus increases to +5.
-– 40th level: Infusion's enchantment bonus increases to +6.
 
 Disadvantages:
 – Hit Die: d4
@@ -290,12 +284,12 @@ Disadvantages:
 – -10% penalty to Pick Pockets, Hide in Shadows and Move Silently.
 – No backstab multiplier.
 – May only distribute 20 skill points per level among thieving skills.~)
-	
+
 	// fallen = 0
-	
+
   STR_VAR
     kit_name      = ~C0AURA~
-	
+
     unusable      = ~0x00004000~
     // clasweap      = ~1 1 1 1 1 1 1 1~
 	//                                       T   S           F   Q             S S
@@ -421,8 +415,8 @@ LAF ADD_KIT_EX
 ARTIFICER: Lantanese artificers are master innovators and craftsmen, making up for their lack of combat or cloak-and-dagger skills with expert knowledge in use of arcane runes, deadly alchemical traps and metal automatons.
 
 Advantages:
-– +20 bonus to Lore.
-– +5 additional Lore per level gained.
+– +10 bonus to Lore.
+– +2 additional Lore per level gained.
 – +10% bonus to Find Traps, Open Locks and Set Traps.
 – May use the Set Alchemical Snare ability once per day in addition to the normal Thief's Set Snare. Gains one use at level 1 and an additional use every 5 levels thereafter.
 
@@ -441,34 +435,31 @@ CRAFT RUNE: Artificers that have knowledge of magic are capable of creating and 
 
 ADVANCED ALCHEMY: Lantanese artificers are skilled in chemistry and potion-making. This skill may be used to craft a number of potions or alchemical weapons. The types of potions available for crafting increase with the artificer's level.
 
-– May use Analyze at will.
+– May use Analyze once per day. Gains one additional use at 8th and 16th level.
 
-ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used an unlimited number of times.
+ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used a limited number of times per day.
 
 – 3rd level: May use the Infusion ability once per day.
 
-INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 10% bonus to damage with the selected damage type +1% additional damage per two levels, capping at 30% at 40th level, with an additional effect:
+INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 5% bonus to damage with the selected damage type, with an additional effect:
   SLASHING: Increases critical hit rate with slashing weapons by 1.
   CRUSHING: Attacks with crushing weapons reduce target's THAC0 by 2 points for 2 rounds (non-cumulative).
   PIERCING: Attacks with piercing weapons reduce target's piercing resistance by 25% for 2 rounds (non-cumulative).
   MISSILES: Additional +1 bonus to hit and damage with ranged weapons.
 
-– 8th level: Infusion's enchantment bonus increases to +2.
 – 9th level: May use the Craft Automaton ability once per day.
 
 CRAFT AUTOMATON: The artificer spends two rounds to assimilate a powerful automaton which can be controlled at will. Automatons last until destroyed, are disabled if their creator is incapacitated, lose control if their creator's mind is affected and fall apart if their creator is killed. Only one automaton can be controlled at any given time.
 
+– 10th level: Infusion's enchantment bonus increases to +2.
 – 10th level: Gains an additional use of Craft Rune.
 – 12th level: May use Elemental Infusions.
 
-ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 10% bonus to damage with and resistance to that element from all sources with an additional +1% additional per level, capping at 50% at 40th level.
+ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 5% bonus to damage with and 10% resistance to that element from all sources.
 
-– 16th level: Infusion's enchantment bonus increases to +3.
-– 18th level: Soul of Artifice: +1 bonus to Saving Throws. This bonus increases to +3 while under the effects of Infusion.
+– 18th level: Infusion's enchantment bonus increases to +3.
+– 18th level: Soul of Artifice: +1 bonus to Saving Throws.
 – 20th level: Gains an additional use of Craft Rune.
-– 24th level: Infusion's enchantment bonus increases to +4.
-– 32nd level: Infusion's enchantment bonus increases to +5.
-– 40th level: Infusion's enchantment bonus increases to +6.
 
 Disadvantages:
 – Hit Die: d4
@@ -749,35 +740,32 @@ CRAFT RUNE: Artificers that have knowledge of magic are capable of creating and 
 
 ADVANCED ALCHEMY: Lantanese artificers are skilled in chemistry and potion-making. This skill may be used to craft a number of potions or alchemical weapons. The types of potions available for crafting increase with the artificer's level.
 
-– May use Analyze at will.
+– May use Analyze once per day. Gains one additional use at 8th and 16th level.
 
-ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used an unlimited number of times.
+ANALYZE: With this ability, the user carefully observes the target and identifies their strengths and weaknesses, revealing their Hit Die, THAC0, Saving Throws, Magic Resistance, Damage Resistance and vulnerability to Poison and Backstabs. This ability may be used a limited number of times per day.
 
 – 3rd level: May use the Infusion ability once per day.
 
-INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 10% bonus to damage with the selected damage type +1% additional damage per two levels, capping at 30% at 40th level, with an additional effect:
+INFUSION: The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a +1 enchantment for the purposes of determining what they can hit for 8 hours and gain a 5% bonus to damage with the selected damage type, with an additional effect:
   SLASHING: Increases critical hit rate with slashing weapons by 1.
   CRUSHING: Attacks with crushing weapons reduce target's THAC0 by 2 points for 2 rounds (non-cumulative).
   PIERCING: Attacks with piercing weapons reduce target's piercing resistance by 25% for 2 rounds (non-cumulative).
   MISSILES: Additional +1 bonus to hit and damage with ranged weapons.
 
 – 5th level: Sapientia: Gains an additional +10 bonus to Lore. The artificer gains an additional +1 bonus to Saving Throws vs. Spells for every 50 Lore.
-– 8th level: Infusion's enchantment bonus increases to +2.
 – 9th level: May use the Craft Automaton ability once per day.
 
 CRAFT AUTOMATON: The artificer spends two rounds to assimilate a powerful automaton which can be controlled at will. Automatons last until destroyed, are disabled if their creator is incapacitated, lose control if their creator's mind is affected and fall apart if their creator is killed. Only one automaton can be controlled at any given time.
 
+– 10th level: Infusion's enchantment bonus increases to +2.
 – 10th level: Gains an additional use of Craft Rune.
 – 12th level: May use Elemental Infusions.
 
-ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 10% bonus to damage with and resistance to that element from all sources with an additional +1% additional per level, capping at 50% at 40th level.
+ELEMENTAL INFUSIONS: The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 5% bonus to damage with and 10% resistance to that element from all sources.
 
-– 16th level: Infusion's enchantment bonus increases to +3.
-– 20th level: Soul of Artifice: +1 bonus to Saving Throws. This bonus increases to +3 while under the effects of Infusion.
+– 18th level: Infusion's enchantment bonus increases to +3.
+– 20th level: Soul of Artifice: +1 bonus to Saving Throws.
 – 20th level: Gains an additional use of Craft Rune.
-– 24th level: Infusion's enchantment bonus increases to +4.
-– 32nd level: Infusion's enchantment bonus increases to +5.
-– 40th level: Infusion's enchantment bonus increases to +6.
 
 – Hit Die: d4~)
 	
@@ -2394,7 +2382,7 @@ LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (~Heale
 COPY_EXISTING ~c0auin7.spl~ ~override~
 SAY NAME1 ~Infusion~
 SAY UNIDENTIFIED_DESC ~Infusion
-The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a higher enchantment (based on the artificer's level) for the purposes of determining what they can hit for 8 hours and gain a 10% bonus to damage with the selected damage type +1% additional damage per two levels, capping at 30% at 40th level, with an additional effect:
+The artificer infuses their allies' weapons with empowering elements, increasing their effectiveness. When using the ability, an artificer may enhance a particular type of physical damage, refreshing once per 8 hours. All party members' weapons of the corresponding type are treated as having a higher enchantment (based on the artificer's level) for the purposes of determining what they can hit for 8 hours and gain a 5% bonus to damage with the selected damage type, with an additional effect:
   SLASHING: Increases critical hit rate with slashing weapons by 1.
   CRUSHING: Attacks with crushing weapons reduce target's THAC0 by 2 points for 2 rounds (non-cumulative).
   PIERCING: Attacks with piercing weapons reduce target's piercing resistance by 25% for 2 rounds (non-cumulative).
@@ -2403,7 +2391,7 @@ The artificer infuses their allies' weapons with empowering elements, increasing
 From 12th level onwards, the artificer may instead use Elemental Infusions, which do not empower weapons but instead a particular type of elemental damage.
 
 ELEMENTAL INFUSIONS
-The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 10% bonus to damage with and resistance to that element from all sources with an additional +1% additional per level, capping at 50% at 40th level.
+The artificer may now use Infusion to instead empower an elemental type (fire, cold, acid, electrical), granting a 5% bonus to damage with and 10% resistance to that element from all sources.
 
 This ability can only be used outside of combat.~
 
