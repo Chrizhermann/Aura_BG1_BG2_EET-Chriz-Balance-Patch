@@ -80,6 +80,14 @@ Equipped abilities:
 – The wearer is protected by Protection from Evil
 
 Weight: 0~
+  // Reduce save bonus from +2 to +1
+  LPF ALTER_EFFECT INT_VAR match_opcode = 33 parameter1 = 1 END
+  // Remove Death Ward (immunity to death magic) - TODO: verify opcode
+  LPF DELETE_EFFECT INT_VAR match_opcode = 210 END
+  // Remove Protection from Chaos - TODO: verify opcode
+  LPF DELETE_EFFECT INT_VAR match_opcode = 296 END
+  // Remove Yasakani cheat-death spell reference - TODO: verify opcode
+  LPF DELETE_EFFECT INT_VAR match_opcode = 232 END
 OUTER_SET strref = RESOLVE_STR_REF (~Aura bats your hand away with the hint of a frown on her face. "Hey, hands off!"~ [GAM_47])
 APPEND item_use.2da ~c0amaga1 Aura %strref% 3~
 
@@ -113,6 +121,10 @@ Equipped abilities:
 – The wearer is protected by Protection from Evil
 
 Weight: 0~
+  // Remove Death Ward - TODO: verify opcode
+  LPF DELETE_EFFECT INT_VAR match_opcode = 210 END
+  // Remove Protection from Chaos - TODO: verify opcode
+  LPF DELETE_EFFECT INT_VAR match_opcode = 296 END
 
 APPEND ~ITEMSPEC.2da~ ~C0AUIDEN  1~
 
@@ -169,6 +181,9 @@ Charge abilities (once per day):
 Equipped abilities:
 – Find Traps: +10%
 – Immunity to blindness~
+// Nerf: reduce Find Traps to +10%, remove Detect Illusions, remove gaze protection
+LPF ALTER_EFFECT INT_VAR match_opcode = 93 parameter1 = 10 END
+LPF DELETE_EFFECT INT_VAR match_opcode = 99 END
 
 COPY_EXISTING ~c0muffy.itm~ ~override~
 SAY NAME1 ~Muffy the Clockwork Squirrel~
@@ -581,6 +596,7 @@ Requires:
  6 Strength
 
 Weight: 0~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 2 thac0_bonus = 2 END
 
 COPY_EXISTING ~c0aubo2a.itm~ ~override~
   LPF ADD_ITEM_EQEFFECT
@@ -657,6 +673,7 @@ Requires:
  6 Strength
 
 Weight: 0~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 2 thac0_bonus = 3 END
 
 COPY_EXISTING ~c0aubo2c.itm~ ~override~
   LPF ADD_ITEM_EQEFFECT
@@ -734,6 +751,7 @@ Requires:
  6 Strength
 
 Weight: 0~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 2 thac0_bonus = 3 damage_bonus = 0 END
 
 COPY_EXISTING ~c0aubo3b.itm~ ~override~
   LPF ADD_ITEM_EQEFFECT
@@ -772,6 +790,7 @@ Requires:
  6 Strength
 
 Weight: 0~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 2 thac0_bonus = 4 END
 
 COPY_EXISTING ~c0aubo3c.itm~ ~override~
   LPF ADD_ITEM_EQEFFECT
@@ -1654,6 +1673,8 @@ Requires:
  5 Strength
 
 Weight: 3~
+// Nerf: remove bonus fire damage (opcode 27 = fire damage on hit)
+LPF DELETE_EFFECT INT_VAR match_opcode = 27 END
 
 COPY_EXISTING ~c0auswfa.itm~ ~override~
 SAY NAME1 ~Katana~
@@ -1694,6 +1715,9 @@ Requires:
 Weight: 4~
 SAY 0x1D6 ~Disarmed~
 SAY 0x206 ~Disarmed~
+// Nerf: remove extra APR, boomerang, disarm, crit bonus. Set speed 4, damage +2
+LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 2 damage_bonus = 2 speed = 4 END
+LPF DELETE_EFFECT INT_VAR match_opcode = 1 END
 
 COPY_EXISTING ~c0ausw02.itm~ ~override~
 SAY NAME1 ~Wakizashi~
@@ -1725,6 +1749,10 @@ Requires:
  5 Strength
 
 Weight: 2~
+// Nerf: remove DEX bonus, movement bonus. Set damage +1, speed 3
+LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 damage_bonus = 1 speed = 3 END
+LPF DELETE_EFFECT INT_VAR match_opcode = 15 END
+LPF DELETE_EFFECT INT_VAR match_opcode = 176 END
 
 COPY_EXISTING ~c0ausw03.spl~ ~override~
 LPF ALTER_EFFECT
@@ -1766,6 +1794,8 @@ Requires:
  16 Dexterity
 
 Weight: 2~
+// Nerf: THAC0 +2, speed 3, crit +5%. Remove bleed.
+LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 2 speed = 3 END
 
 COPY_EXISTING ~c0auim01.itm~ ~override~
 SAY NAME1 ~Two-handed Sword~
@@ -1788,6 +1818,9 @@ Requires:
  14 Strength
 
 Weight: 15~
+// Nerf: THAC0 +2 (keep damage +3)
+LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 2 END
+WRITE_SHORT 0x42 2
 
 COPY_EXISTING ~c0auim02.itm~ ~override~
 LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (~Bleeding~) END
@@ -1810,6 +1843,9 @@ Requires:
  12 Dexterity
 
 Weight: 5~
+// Nerf: +2 enchantment, THAC0 +2, damage +2
+LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 2 damage_bonus = 2 END
+WRITE_SHORT 0x42 2
 
 COPY_EXISTING ~c0auim03.itm~ ~override~
 SAY NAME1 ~Bracers~
@@ -1822,6 +1858,9 @@ Equipped abilities:
 – Critical Hit Chance: +5% (melee only)
 
 Weight: 1~
+// Nerf: remove THAC0 bonus, keep only crit
+LPF DELETE_EFFECT INT_VAR match_opcode = 278 END
+LPF DELETE_EFFECT INT_VAR match_opcode = 36 END
 
 COPY_EXISTING ~c0auim04.itm~ ~override~
 SAY NAME1 ~Idol~
