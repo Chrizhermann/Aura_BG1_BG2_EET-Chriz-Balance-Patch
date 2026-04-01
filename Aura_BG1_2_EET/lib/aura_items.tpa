@@ -1876,6 +1876,9 @@ Equipped abilities:
 – Save vs. Spells: -2 penalty
 
 Weight: 1~
+// Nerf: remove lightning immunity, proc, damage bonus, Storm Shield. Keep elec resist. Change save penalty to -2
+LPF ALTER_EFFECT INT_VAR match_opcode = 33 parameter1 = (0 - 2) END
+LPF DELETE_EFFECT INT_VAR match_opcode = 173 END
 
 COPY_EXISTING ~c0auim05.itm~ ~override~
 SAY NAME1 ~Gauntlets~
@@ -1890,6 +1893,10 @@ Equipped abilities:
 – Open Locks: +15%
 
 Weight: 2~
+// Nerf: remove THAC0 bonus, reduce skill bonuses to 15%
+LPF DELETE_EFFECT INT_VAR match_opcode = 36 END
+LPF ALTER_EFFECT INT_VAR match_opcode = 92 parameter1 = 15 END
+LPF ALTER_EFFECT INT_VAR match_opcode = 93 parameter1 = 15 END
 
 COPY_EXISTING ~c0auim06.itm~ ~override~
 SAY NAME1 ~Ring~
@@ -1903,6 +1910,8 @@ Equipped abilities:
 – Intelligence: +1
 
 Weight: 0~
+// Nerf: remove casting speed bonus
+LPF DELETE_EFFECT INT_VAR match_opcode = 189 END
 
 COPY_EXISTING ~c0auim07.itm~ ~override~
 SAY NAME1 ~Ring~
@@ -1918,6 +1927,8 @@ Equipped abilities:
 – Dexterity: +1
 
 Weight: 0~
+// Nerf: remove AC vs missiles bonus
+LPF DELETE_EFFECT INT_VAR match_opcode = 0 END
 
 COPY_EXISTING ~c0auim08.itm~ ~override~
 SAY NAME1 ~Girdle~
@@ -1955,6 +1966,10 @@ Requires:
  10 Strength
 
 Weight: 10~
+// Nerf: +2 enchantment, THAC0 +2, damage +2, saves +1
+LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 2 damage_bonus = 2 END
+WRITE_SHORT 0x42 2
+LPF ALTER_EFFECT INT_VAR match_opcode = 33 parameter1 = 1 END
 
 COPY_EXISTING ~c0afish.itm~ ~override~
 SAY NAME1 ~Sardine~
