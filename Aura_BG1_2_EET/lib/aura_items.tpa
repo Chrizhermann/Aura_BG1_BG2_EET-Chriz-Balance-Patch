@@ -20,29 +20,25 @@ Aura's custom-made leather armor is dyed a bright pinkish red colour that is, ac
 
 STATISTICS:
 
-Equipped abilities:
-– Save vs. Breath Weapons: +3
-
-Armor Class: 7 (9 vs. piercing and missile)
+Armor Class: 8
 Requires:
  4 Strength
 
 Weight: 10~
 
 COPY_EXISTING ~c0aule02.itm~ ~override~
-SAY NAME1 ~Cherry-tinted Leather Armor +3~
-SAY NAME2 ~Cherry-tinted Leather Armor +3~
+SAY NAME1 ~Cherry-tinted Leather Armor +2~
+SAY NAME2 ~Cherry-tinted Leather Armor +2~
 SAY DESC ~This basic armor is made of thick wax or water-hardened leather. It is sturdy protection, not supple like boots or a cloak. Soft garment leathers like that would offer no more protection than common clothing. Magical enchantments have improved the protective abilities of this particular suit.
 
-Aura's custom-made leather armor is dyed a bright pinkish red colour that is, according to Aura, reminiscent of Kara-Turan cherry blossoms, designed to repel stains and unpleasant odors, as well as protect from the hazards of her experiments, such as extreme heat or cold, electrical shocks, and chemical burns.
+Aura's custom-made leather armor is dyed a bright pinkish red colour that is, according to Aura, reminiscent of Kara-Turan cherry blossoms, designed to repel stains and unpleasant odors.
 
 STATISTICS:
 
 Equipped abilities:
-– Save vs. Breath Weapons: +3
-– Elemental Resistance: +20%
+– Save vs. Breath Weapons: +1
 
-Armor Class: 5 (7 vs. piercing and missile)
+Armor Class: 6 (8 vs. piercing and missile)
 Requires:
  4 Strength
 
@@ -1628,9 +1624,7 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Wisdom: +1
 – Charisma: -2
-– All enemies within 5 ft of the wearer suffer a -1 penalty to THAC0, damage, armor class and all saving throws.
 
 Weight: 1~
 
@@ -1828,7 +1822,6 @@ SAY DESC ~The bracers appear to be Bracers of Specialization, but were in fact o
 STATISTICS:
 
 Equipped abilities:
-– THAC0: +2 (melee only)
 – Critical Hit Chance: +5% (melee only)
 
 Weight: 1~
@@ -1838,19 +1831,13 @@ SAY NAME1 ~Idol~
 SAY NAME2 ~Idol of Kozah~
 SAY DESC ~This idol depicts Kozah the Stormstar, a long-extinct god who was venerated and feared among the less-powerful strata of ancient Netherese society. Worship of this god of storms, earthquakes, strife, and rebellion was outlawed by many of the civilization's powerful archwizards. Many Kozahyn shrines and temples were therefore built in secretive, underground locations where the devout were better able to escape detection.
 
-Aura's tinkering has somehow awakened a part of the power that lingers within the idol, making it a useful magical item. While held in one's hand, the idol can call down bolts of lightning from the sky to strike down enemies around them or create a Storm Shield around the bearer. However, the bearer's mind is wearied from constant battling against the rage induced by holding the idol close.
+Aura's tinkering has somehow awakened a part of the power that lingers within the idol, making it a useful magical item. However, the bearer's mind is wearied from constant battling against the rage induced by holding the idol close.
 
 STATISTICS:
 
-Charge abilities:
-– Storm Shield once per day
-
 Equipped abilities:
-– 5% chance each nearby foe will be struck by lightning for 2d8 electrical damage
-– Wearer is immune to lightning strikes, Call Lightning and Lightning Bolt
 – Electrical Resistance: +20%
-– All electrical damage inflicted by the wearer is increased by 15%
-– Save vs. Spells: -3 penalty
+– Save vs. Spells: -2 penalty
 
 Weight: 1~
 
@@ -1863,9 +1850,8 @@ With mischief in mind, the impetuous Elander set out to craft these cursed gaunt
 STATISTICS:
 
 Equipped abilities:
-– Off-Hand THAC0: +2
-– Pick Pockets: +25%
-– Open Locks: +25%
+– Pick Pockets: +15%
+– Open Locks: +15%
 
 Weight: 2~
 
@@ -1877,13 +1863,8 @@ Oft the bane of the careless Mage, this ring was actually used to promote humili
 
 STATISTICS:
 
-Equipped abilities: 
+Equipped abilities:
 – Intelligence: +1
-– Casting Speed: +1
-
-Requires:
-  16 Intelligence
-  14 Wisdom
 
 Weight: 0~
 
@@ -1899,7 +1880,6 @@ STATISTICS:
 
 Equipped abilities:
 – Dexterity: +1
-– Armor Class vs. Missiles: +3
 
 Weight: 0~
 
