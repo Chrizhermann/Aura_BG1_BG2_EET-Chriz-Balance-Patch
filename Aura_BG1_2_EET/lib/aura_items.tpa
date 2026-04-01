@@ -73,16 +73,15 @@ END
       END
 SAY NAME1 ~Amulet~
 SAY NAME2 ~Aura's Magatama~
-SAY DESC ~This mysterious, curved stone is called a 'magatama'. Though you have never seen anything like it before, it is apparently a fairly common decorative design in its place of origin, Kara-Tur. These jewels are sometimes blessed by priestesses of the Way and carried as protective talismans against chaotic and malevolent spirits.
+SAY DESC ~This mysterious, curved stone is called a 'magatama'. Though you have never seen anything like it before, it is apparently a fairly common decorative design in its place of origin, Kara-Tur. These jewels are sometimes blessed by priestesses of the Way and carried as protective talismans against malevolent spirits.
 
-Aura's magatama is carved from a piece of green jade and was enchanted by the Kozakuran priestess Reika Amakagami, her mentor, and as such carries great sentimental value to her, so much that she is unwilling to ever remove it.
+Aura's magatama is carved from a piece of green jade and was enchanted by the Kozakuran priestess Reika Amakagami, her mentor, and as such carries great sentimental value to her.
 
 STATISTICS:
 
 Equipped abilities:
-– Saving Throws: +2
-– Tamanoya: The wearer is protected by Death Ward, Protection from Chaos and Protection from Evil
-– Yasakani: If the wearer would suffer fatal damage, she instead survives with one hit point and is healed for 10% of her maximum hit points. This blessing is only effective once per eight hours, or after being raised.
+– Saving Throws: +1
+– The wearer is protected by Protection from Evil
 
 Weight: 0~
 OUTER_SET strref = RESOLVE_STR_REF (~Aura bats your hand away with the hint of a frown on her face. "Hey, hands off!"~ [GAM_47])
@@ -107,15 +106,15 @@ COPY_EXISTING ~c0amaga2.itm~ ~override~
 LPF ALTER_EFFECT INT_VAR match_opcode = 319 special = RESOLVE_STR_REF (~<CHARNAME>~) END
 SAY NAME1 ~Amulet~
 SAY NAME2 ~<CHARNAME>'s Magatama~
-SAY DESC ~This mysterious, curved stone is called a 'magatama'. Though you have never seen anything like it before, it is apparently a fairly common decorative design in its place of origin, Kara-Tur. These jewels are sometimes blessed by priestesses of the Way and carried as protective talismans against chaotic and malevolent spirits.
+SAY DESC ~This mysterious, curved stone is called a 'magatama'. Though you have never seen anything like it before, it is apparently a fairly common decorative design in its place of origin, Kara-Tur. These jewels are sometimes blessed by priestesses of the Way and carried as protective talismans against malevolent spirits.
 
-This magatama was by Aura created as a gift to <CHARNAME> using a small piece of white jade. While its material value is low, there is a sort of simple beauty to its design.
+This magatama was created by Aura as a gift to <CHARNAME> using a small piece of white jade. While its material value is low, there is a sort of simple beauty to its design.
 
 STATISTICS:
 
 Equipped abilities:
 – Saving Throws: +1
-– Tamanoya: The wearer is protected by Death Ward, Protection from Chaos and Protection from Evil
+– The wearer is protected by Protection from Evil
 
 Weight: 0~
 
@@ -1215,7 +1214,7 @@ COPY_EXISTING ~c0auboa1.itm~ ~override~
       match_opcode = 139 // display string
 	  parameter1 = RESOLVE_STR_REF (~Armor Pierced~)
   END
-SAY NAME2 ~Sniper Shot +5~
+SAY NAME2 ~Sniper Shot +3~
 WRITE_SHORT 0x9C ~%c0auaro8%~
 COPY_EXISTING ~c0auboa2.itm~ ~override~
   LPF ALTER_EFFECT
@@ -1225,7 +1224,7 @@ COPY_EXISTING ~c0auboa2.itm~ ~override~
       match_opcode = 139 // display string
 	  parameter1 = RESOLVE_STR_REF (~Armor Pierced~)
   END
-SAY NAME2 ~Sniper Shot +5~
+SAY NAME2 ~Sniper Shot +3~
 WRITE_SHORT 0x9C ~%c0auaro8%~
 COPY_EXISTING ~c0auboa3.itm~ ~override~
   LPF ALTER_EFFECT
@@ -1235,7 +1234,7 @@ COPY_EXISTING ~c0auboa3.itm~ ~override~
       match_opcode = 139 // display string
 	  parameter1 = RESOLVE_STR_REF (~Armor Pierced~)
   END
-SAY NAME2 ~Sniper Shot +5~
+SAY NAME2 ~Sniper Shot +3~
 WRITE_SHORT 0x9C ~%c0auaro8%~
 
 COPY_EXISTING ~c0aubob1.itm~ ~override~
@@ -1246,7 +1245,7 @@ COPY_EXISTING ~c0aubob1.itm~ ~override~
       match_opcode = 139 // display string
 	  parameter1 = RESOLVE_STR_REF (~Stunned~)
   END
-SAY NAME2 ~Blazing Shot +5~
+SAY NAME2 ~Blazing Shot +3~
 WRITE_SHORT 0x9C ~%c0auaro4%~
 COPY_EXISTING ~c0aubob2.itm~ ~override~
   LPF ALTER_EFFECT
@@ -1256,7 +1255,7 @@ COPY_EXISTING ~c0aubob2.itm~ ~override~
       match_opcode = 139 // display string
 	  parameter1 = RESOLVE_STR_REF (~Stunned~)
   END
-SAY NAME2 ~Blazing Shot +5~
+SAY NAME2 ~Blazing Shot +3~
 WRITE_SHORT 0x9C ~%c0auaro4%~
 COPY_EXISTING ~c0aubob3.itm~ ~override~
   LPF ALTER_EFFECT
@@ -1266,7 +1265,7 @@ COPY_EXISTING ~c0aubob3.itm~ ~override~
       match_opcode = 139 // display string
 	  parameter1 = RESOLVE_STR_REF (~Stunned~)
   END
-SAY NAME2 ~Blazing Shot +5~
+SAY NAME2 ~Blazing Shot +3~
 WRITE_SHORT 0x9C ~%c0auaro4%~
 
 COPY_EXISTING ~c0auboc.itm~ ~override~
@@ -1274,8 +1273,8 @@ COPY_EXISTING ~c0auboc.itm~ ~override~
 	INT_VAR
 		projectile = c0arain
 END
-SAY NAME1 ~Arrow Rain +5~
-SAY NAME2 ~Arrow Rain +5~
+SAY NAME1 ~Arrow Rain +3~
+SAY NAME2 ~Arrow Rain +3~
 
 COPY_EXISTING ~c0auarow.spl~ ~override~
 	LPF ALTER_SPELL_HEADER INT_VAR header = 2 projectile = c0auheal END
@@ -1321,15 +1320,15 @@ COPY_EXISTING ~c0auaro2.itm~ ~override~
 END
 SAY NAME1 ~Lightning Arrow +3~
 SAY NAME2 ~Lightning Arrow +3~
-SAY DESC ~This unusual arrow, designed and crafted by Aura, is charged with a huge amount of electricity which is released when the arrow strikes at a target, electrocuting them as well as all enemies around them.
+SAY DESC ~This unusual arrow, designed and crafted by Aura, is charged with electricity which is released when the arrow strikes at a target, electrocuting them.
 
 STATISTICS:
 
 Combat abilities:
-– Deals electrical damage that chains to up to five additional targets, applying Magnetism (-2 penalty to AC vs. missiles and -20% missile damage resistance) to all creatures struck for five rounds
+– Target suffers -1 penalty to AC vs. Ranged Weapons for 5 rounds
 
-THAC0: +4
-Damage: 1d6+4 electrical
+THAC0: +3
+Damage: 1d6+2 electrical
 Launcher: Sunshooter Bow
 
 Weight: 0~
@@ -1362,15 +1361,15 @@ END
 END
 SAY NAME1 ~Static Arrow +3~
 SAY NAME2 ~Static Arrow +3~
-SAY DESC ~This unusual arrow, designed and crafted by Aura, is charged with a huge amount of electricity which is released when the arrow strikes a target, trapping them in a web-like formation.
+SAY DESC ~This unusual arrow, designed and crafted by Aura, is charged with electricity which is released when the arrow strikes a target.
 
 STATISTICS:
 
 Combat abilities:
-– Target must make a save vs. death at -2 or be paralyzed and suffer from a -50% penalty to electrical resistance for five rounds
+– Target suffers -15% penalty to electrical resistance for 3 rounds
 
 THAC0: +2
-Damage: 1d6+4 electrical
+Damage: 1d6+2 electrical
 Launcher: Sunshooter Bow
 
 Weight: 0~
@@ -1402,10 +1401,10 @@ SAY DESC ~This unusual arrow, designed and crafted by Aura, is enchanted with an
 STATISTICS:
 
 Combat abilities:
-– Target loses one 8th- or lower level spell protection and -10% magic resistance for one turn
+– Target loses one 8th- or lower level spell protection
 
-THAC0: +10
-Damage: 2d6+4 magic
+THAC0: +3
+Damage: 1d6+2 magic
 Launcher: Sunshooter Bow
 
 Weight: 0~
@@ -1438,9 +1437,9 @@ SAY DESC ~This unusual arrow, designed and crafted by Aura, is capable of warpin
 STATISTICS:
 
 Combat abilities:
-– Target is Warped into another dimension for one turn. Enemies may make a Saving Throw vs. Spells at -4 to avoid the effects.
+– Target is Warped into another dimension for one turn. Enemies may make a Saving Throw vs. Spells to avoid the effects.
 
-THAC0: +10
+THAC0: +3
 Damage: None
 Launcher: Sunshooter Bow
 
@@ -1474,10 +1473,10 @@ SAY DESC ~This unusual arrow, designed and crafted by Aura, contains a small amo
 STATISTICS:
 
 Combat abilities:
-– Target must make a Save vs. Spell at -4 or be stunned for one round
+– Target must make a save vs. Spell or be stunned for one round
 
-Damage: 6d6+4 explosion upon impact (Save vs. Spell at -4 for half)
-Area of Effect: 15' radius
+Damage: 3d6 explosion upon impact (Save vs. Spell for half)
+Area of Effect: 10' radius
 Launcher: Sunshooter Bow
 
 Weight: 0~
