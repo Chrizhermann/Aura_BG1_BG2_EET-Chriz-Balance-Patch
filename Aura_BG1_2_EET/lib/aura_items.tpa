@@ -65,24 +65,6 @@ COPY_EXISTING ~c0amaga1.itm~ ~override~
 	STR_VAR
 	  resource = C0Aura
 END
-  LPF ADD_ITEM_EQEFFECT
-    INT_VAR
-      opcode = 180
-	  target = 1
-	  timing = 2
-	  parameter1 = RESOLVE_STR_REF (~Aura refuses to equip this weapon.~)
-	STR_VAR
-	  resource = c0ausw01
-END
-  LPF ADD_ITEM_EQEFFECT
-    INT_VAR
-      opcode = 180
-	  target = 1
-	  timing = 2
-	  parameter1 = RESOLVE_STR_REF (~Aura shakes her head. "Eugh... no thanks, <CHARNAME>. I don't eat meat.~)
-	STR_VAR
-	  resource = ISHF001
-END
       LPF ALTER_EFFECT
       INT_VAR
         match_opcode      = 142   // Display portrait icon
@@ -552,14 +534,13 @@ STATISTICS:
 
 – Configuration: Rapid
   Attacks cannot critically hit
-  2.5 attacks per round
+  1 extra attack per round
 
 Charge abilities (1x/day):
 – Create Sunshooter Arrows
 
 Combat abilities:
-– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds
-– Analytical Archery: This bow uses Intelligence, if higher, for bonuses to ranged THAC0 instead of Dexterity.
+– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds (max 3 stacks)
 
 THAC0: +1
 Damage: -2 (missile)
@@ -568,7 +549,6 @@ Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
- 19 Intelligence
 
 Weight: 0~
 
@@ -599,16 +579,14 @@ Charge abilities (1x/day):
 – Create Sunshooter Arrows
 
 Combat abilities:
-– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds
-– Analytical Archery: This bow uses Intelligence, if higher, for bonuses to ranged THAC0 instead of Dexterity.
+– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds (max 3 stacks)
 
-THAC0: +3
+THAC0: +2
 Speed Factor: 4
 Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
- 19 Intelligence
 
 Weight: 0~
 
@@ -632,14 +610,13 @@ STATISTICS:
 
 – Configuration: Rapid
   Attacks cannot critically hit
-  2.5 attacks per round
+  1 extra attack per round
 
 Charge abilities (1x/day):
 – Create Sunshooter Arrows
 
 Combat abilities:
-– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 and Missile Resistance by 3% for 5 rounds
-– Analytical Archery: This bow uses Intelligence, if higher, for bonuses to ranged THAC0 instead of Dexterity.
+– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds (max 3 stacks)
 
 THAC0: +2
 Damage: -1 (missile)
@@ -648,7 +625,6 @@ Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
- 19 Intelligence
 
 Weight: 0~
 
@@ -679,16 +655,14 @@ Charge abilities (1x/day):
 – Create Sunshooter Arrows
 
 Combat abilities:
-– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 and Missile Resistance by 3% for 5 rounds
-– Analytical Archery: This bow uses Intelligence, if higher, for bonuses to ranged THAC0 instead of Dexterity.
+– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds (max 3 stacks)
 
-THAC0: +4
+THAC0: +3
 Speed Factor: 4
 Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
- 19 Intelligence
 
 Weight: 0~
 
@@ -752,24 +726,20 @@ STATISTICS:
 
 – Configuration: Rapid
   Attacks cannot critically hit
-  3 attacks per round
+  1 extra attack per round
 
 Charge abilities (1x/day):
 – Create Sunshooter Arrows
 
 Combat abilities:
-– Eminence: All arrows launched by this bow strike with at least +1 enchantment
-– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 and Missile Resistance by 3% for 5 rounds
-– Analytical Archery: This bow uses Intelligence, if higher, for bonuses to ranged THAC0 instead of Dexterity.
+– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds (max 3 stacks)
 
 THAC0: +3
-Damage: -1 (missile)
 Speed Factor: 0
 Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
- 19 Intelligence
 
 Weight: 0~
 
@@ -800,17 +770,14 @@ Charge abilities (1x/day):
 – Create Sunshooter Arrows
 
 Combat abilities:
-– Eminence: All arrows launched by this bow strike with at least +1 enchantment
-– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 and Missile Resistance by 3% for 5 rounds
-– Analytical Archery: This bow uses Intelligence, if higher, for bonuses to ranged THAC0 instead of Dexterity.
+– Magnetism: Each hit reduces target's Armor Class vs. Ranged Weapons by 1 for 5 rounds (max 3 stacks)
 
-THAC0: +5
+THAC0: +4
 Speed Factor: 4
 Proficiency Type: Shortbow
 Type: Two-handed
 Requires:
  6 Strength
- 19 Intelligence
 
 Weight: 0~
 
