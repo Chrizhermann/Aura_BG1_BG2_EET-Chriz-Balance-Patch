@@ -2809,7 +2809,7 @@ Equipped abilities:
 
 Weight: 0~
 OUTER_SET strref = RESOLVE_STR_REF (~Aura bats your hand away with the hint of a frown on her face. "Hey, hands off!"~ [GAM_47])
-APPEND item_use.2da ~c0amaga3 Aura %strref% 3~
+APPEND item_use.2da ~c0amaga3 Aura %strref% 2~
 
 // Writes a new item type into the itemtype.2da and returns the reference value.
 LAF ADD_ITEMTYPE_IN_2DA

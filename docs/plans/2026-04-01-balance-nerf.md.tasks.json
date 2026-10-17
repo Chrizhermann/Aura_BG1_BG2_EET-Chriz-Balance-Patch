@@ -1,0 +1,16 @@
+{
+  "planPath": "docs/plans/2026-04-01-balance-nerf.md",
+  "tasks": [
+    {"id": 1, "subject": "Task 1: Nerf Sunshooter Bow descriptions and stats", "status": "pending"},
+    {"id": 2, "subject": "Task 2: Update Sunshooter upgrade scripts", "status": "pending", "blockedBy": [1]},
+    {"id": 3, "subject": "Task 3: Nerf arrow types", "status": "pending"},
+    {"id": 4, "subject": "Task 4: Nerf Magatama, Goggles, and Containers", "status": "pending"},
+    {"id": 5, "subject": "Task 5: Nerf melee weapons", "status": "pending"},
+    {"id": 6, "subject": "Task 6: Nerf equipment items", "status": "pending"},
+    {"id": 7, "subject": "Task 7: Nerf grenades, bombs, and misc items", "status": "pending"},
+    {"id": 8, "subject": "Task 8: Nerf kit abilities and descriptions", "status": "pending"},
+    {"id": 9, "subject": "Task 9: Reduce XP rewards", "status": "pending"},
+    {"id": 10, "subject": "Task 10: Update Invisibility Device quantity in dialogue", "status": "pending", "blockedBy": [7]}
+  ],
+  "lastUpdated": "2026-04-01T12:00:00Z"
+}
